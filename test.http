@@ -1,0 +1,51 @@
+POST http://localhost:8080/category HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "name": "Category 3"
+}
+
+###
+
+GET http://localhost:8080/category/702d3015-3054-4a7e-8920-36b71034f329 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/category HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/product HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "name": "Product 2",
+    "description": "Product 2 description",
+    "price": 19.99,
+    "image_url": "https://www.youtube.com",
+    "category_id": "632f53d4-ce11-472e-94cc-a655d140746f"
+}
+
+###
+
+GET http://localhost:8080/product/dc7394ad-b5c9-4bbb-b4ef-d26df1cd3cad HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/product HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/product/category/632f53d4-ce11-472e-94cc-a655d140746f HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
